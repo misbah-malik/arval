@@ -1,38 +1,269 @@
-.App {
-  text-align: center;
+.loginContainer {
+  max-width: 450px;
+  margin: 100px auto;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loginSquare {
+  width: 400px;
+  height: 442px;
+  border: 1px double black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 12px;
+  background-color: #817ca5;
+}
+.headerTitleStyle {
+  width: 91px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 150px;
+
+  color: #817ca5;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.userNameLabel {
+  width: 360px;
+  height: 16px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 20px;
+  margin-top: 40px;
+  /* identical to box height, or 114% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.inputUserName {
+  width: 360px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 4px;
+}
+
+.userEmailLabel {
+  width: 360px;
+  height: 16px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 20px;
+  margin-top: 40px;
+  /* identical to box height, or 114% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.inputUserEmail {
+  width: 360px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 4px;
+}
+
+.countryLabel {
+  width: 360px;
+  height: 16px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 40px;
+  margin-left: 20px;
+  /* identical to box height, or 114% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.countryDropdown {
+  width: 365px;
+  height: 50px;
+  margin-left: 20px;
+
+  background: #ffffff;
+}
+
+.continueButton {
+  width: 360px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-top: 40px;
+  margin-left: 20px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
+}
+.error {
+  color: red;
+  margin-left: 20px;
+  top: 15px;
+}
+
+.passwordContainer {
+  width: 400px;
+  height: 348px;
+  border: 1px double black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #817ca5;
+}
+.passwordHeaderStyle {
+  width: 160px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 130px;
+
+  color: #817ca5;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewContainer {
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 40px 20px;
+  background-color: black;
+  gap: 40px;
+
+  position: absolute;
+  width: 400px;
+  height: 270px;
+  left: calc(50% - 400px / 2);
+  top: 26.16%;
+  bottom: 33.37%;
+
+  background: #817ca5;
+  border-radius: 20px;
+}
+.reviewTextStyle {
+  width: 68px;
+  height: 16px;
+  flex-direction: column;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 35px;
+  /* identical to box height, or 114% */
+
+  display: flex;
+  align-items: center;
+
+  color: #cecaeb;
+}
+
+.completeButton {
+  width: 360px;
+  height: 60px;
+
+  background: #ffffff;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.completeButtonText {
+  width: 112px;
+  height: 29px;
+  left: calc(50% - 112px / 2);
+  top: calc(50% - 29px / 2 + 0.5px);
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
+}
+.textDisplayStyle {
+  width: 170px;
+  height: 16px;
+  flex-direction: column;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 35px;
+  /* identical to box height, or 114% */
+  align-items: center;
+  display: flex;
   color: white;
 }
+.reviewStyleTitle {
+  width: 138px;
+  height: 24px;
 
-.App-link {
-  color: #61dafb;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 150px auto;
+
+  color: #817ca5;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainWrapper {
+  display: flex;
+  column-gap: 180px;
 }
